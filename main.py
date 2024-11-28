@@ -21,9 +21,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from bs4 import BeautifulSoup
 
 bot = Client("bot",
-             bot_token= "7831179613:AAHMrkcOulPHmYJT1CxIZMJdrPcKZAKDH8E", 
-             api_id= 21567814,
-             api_hash= "cd7dc5431d449fd795683c550d7bfb7e")
+             bot_token= "8160218853:AAG3RAkZMR3asoAzSUx5b2m290-eTjwoXRo", 
+             api_id= 27679306,
+             api_hash= "d0f390f798eec4ddb9246a00a44b7a3f")
 
 
 #----------CONVERTOR-------------
@@ -58,7 +58,7 @@ async def run_bot(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello, **ROWDY**! 馃専\n\n I am your friendly bot 馃, here to help you download links from your **.txt** file and upload them to Telegram. To get started, simply send me the /ROHIT command and follow a few easy steps.")
+    editable = await m.reply_text("Hello, **ROWDY**! 馃専\n\n I am your friendly bot 馃, here to help you download links from your **.txt** file and upload them to Telegram. To get started, simply send me the /ROWDY command and follow a few easy steps.")
 
 
 @bot.on_message(filters.command("stop"))
@@ -69,7 +69,7 @@ async def restart_handler(_, m):
 
 #-------------TXT Uploader Commands ---------------
 
-@bot.on_message(filters.command(["ROHIT"]))
+@bot.on_message(filters.command(["ROWDY"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hey Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -144,7 +144,7 @@ async def account_login(bot: Client, m: Message):
         CR = "ROWDY鉂わ笍"
     else:
         CR = raw_text3
-    await editable.edit("Now send the **Thumb url**\nEg : **`https://telegra.ph/file/IMG_20241127_222550_204.jpg`**\n\nor Send `no`")
+    await editable.edit("Now send the **Thumb url**\nEg : **`https://telegra.ph/file/df5f23cd48e6043828e0e.jpg`**\n\nor Send `no`")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -240,6 +240,6 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("DONE Rohit BOSS 馃槑")
+    await m.reply_text("DONE BOSS 馃槑")
 
 bot.run()
