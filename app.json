@@ -1,0 +1,44 @@
+{
+    "name": "Rohit",
+    "description": "Rohit Txt Bot For Telegram",
+    "logo": "https://telegra.ph/file/df5f23cd48e6043828e0e.jpg",
+    "keywords": [
+        "text-video",
+        "video-extract",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/rihankumar/txt_leech",
+    "success_url": "https://t.me/paidcoursefreemeha",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "饾懍饾拸饾挄饾拞饾挀 饾拃饾拹饾挅饾挀 饾懆饾拺饾拪 饾懓饾懌",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "饾懍饾拸饾挄饾拞饾挀 饾拃饾拹饾挅饾挀 饾懆饾拺饾拪 饾懐饾拏饾挃饾拤",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "饾懍饾拸饾挄饾拞饾挀 饾拃饾拹饾挅饾挀 饾懇饾拹饾挄 饾懟饾拹饾拰饾拞饾拸",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "饾懠饾挃饾拞饾挀 饾懓饾懌 饾懚饾拠 饾懇饾拹饾挄 饾懚饾挊饾拸饾拞饾挀",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "饾懞饾挅饾拝饾拹 饾懓饾懌'饾挃 (饾拃饾拹饾挅 饾應饾拏饾拸 饾懆饾拝饾拝 饾懘饾挅饾拲饾挄饾拪饾拺饾拲饾拞 饾懇饾挌 饾懏饾拪饾挆饾拪饾拸饾拡 饾懞饾拺饾拏饾拕饾拞)",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ]
+    }
