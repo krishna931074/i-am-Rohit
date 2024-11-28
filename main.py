@@ -58,7 +58,7 @@ async def run_bot(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello, **ROWDY**! 馃専\n\n I am your friendly bot 馃, here to help you download links from your **.txt** file and upload them to Telegram. To get started, simply send me the /ROWDY command and follow a few easy steps.")
+    editable = await m.reply_text("Hello, **ROWDY**! 馃専\n\n I am your friendly bot 馃, here to help you download links from your **.txt** file and upload them to Telegram. To get started, simply send me the /ROHIT command and follow a few easy steps.")
 
 
 @bot.on_message(filters.command("stop"))
@@ -69,7 +69,7 @@ async def restart_handler(_, m):
 
 #-------------TXT Uploader Commands ---------------
 
-@bot.on_message(filters.command(["ROWDY"]))
+@bot.on_message(filters.command(["ROHIT"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hey Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -227,7 +227,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading馃摜:-**\n\n** Video Name :-** `{name}\n\n鈺扳攢鈹�鈹�鈹�鈱�**鉁ㄢ潳锔� ROWDY 鉂わ笍鉁�**鈱嬧攢鈹�鈹�鈹�鈺�")
+                    prog = await m.reply_text(f"**stranger Downloading馃摜:-**\n\n** Video Name :-** `{name}\n\n鈺扳攢鈹�鈹�鈹�鈱�**鉁ㄢ潳锔� ROHIT 鉂わ笍鉁�**鈱嬧攢鈹�鈹�鈹�鈺�")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -240,6 +240,6 @@ async def account_login(bot: Client, m: Message):
                 continue
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("DONE BOSS 馃槑")
+    await m.reply_text("Stranger boy complete your task 馃槑")
 
 bot.run()
